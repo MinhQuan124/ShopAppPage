@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.4.2-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Quan's Shop</title>
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid wide">
+                <nav class="header__navbar hide-on-mobile-tablet">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-has-qr header__navbar-item--separate">
+                            Open shop in app Quan's Shop
+                            <div class="header__qr">
+                                <img src="./assets/img/qr_code.png" alt="QR CODE" class="header__qr-img">
+                                <div class="header__qr-apps">
+                                    <a href="https://apps.apple.com/vn/app/10-10-shopee-live-th%C6%B0%C6%A1ng-hi%E1%BB%87u/id959841449" class="header__qr-link">
+                                        <img src="./assets/img/app_store.png" alt="App store" class="header__qr-download-img">
+                                    </a>
+                                    <a href="https://play.google.com/store/apps/details?id=com.shopee.vn&referrer=af_tranid%3Drsx9V4J79OX3NH5LwyqLcw%26pid%3DOrganicA%26c%3Dlp_home_and1&pli=1" class="header__qr-link">
+                                        <img src="./assets/img/gg_play.png" alt="Google play" class="header__qr-download-img">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-title--no-pointer">Follow us on</span>
+                            <a href="https://www.facebook.com/minh.quaan.12/?locale=vi_VN" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/dq_1243/" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://github.com/MinhQuan124" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fa-brands fa-github"></i>
+                            </a>
+                        </li>
+    
+                    </ul>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-has-notification">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon far fa-bell"></i>
+                                Notifications
+                            </a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>New notifications</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets/img/white_nike.jfif" alt="White" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Nike Air Force 1'07</span>
+                                                <span class="header__notify-description">The radiance lives on in the Nike Air Force 1 '07, the basketball original that puts a fresh spin on what you know best: durably stitched overlays, clean finishes and the perfect amount of flash to make you shine.</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets/img/pink_nike.jpg" alt="Pink" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Nike Air Force 678</span>
+                                                <span class="header__notify-description">Designed for basketball but adopted by skaters, the Nike Dunk Low helped define sneaker culture.</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets/img/black_nike.png" alt="Black" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Nike Air Force 888</span>
+                                                <span class="header__notify-description">Men's shoes.</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="" class="header__notify-footer-btn">More</a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa-solid fa-question"></i>
+                                Help
+                            </a>
+                        </li>
+                        <!-- <li class="header__navbar-item header__navbar-item--bold header__navbar-item--separate">Sign up</li>
+                        <li class="header__navbar-item header__navbar-item--bold">Login</li> -->
+                        <li class="header__navbar-item header__navbar-user">
+                            <img src="https://down-vn.img.susercontent.com/file/a9d9646f58c0358015c85b8e407832bd_tn" alt="" class="header__navbar-user-img">
+                            <span class="header__navbar-user-name">Dinh Minh Quan</span>
+                            <ul class="header__navbar-user-menu">
+                                <li class="header__navbar-user-item">
+                                    <a href="">My Account</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">My Purchase</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Log out</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            <!-- Header with search -->
+                <div class="header-with-search">
+                    <label for="mobile-search-checkbox" class="header__mobile-search">
+                        <i class="header__mobile-search-icon fa-solid fa-magnifying-glass"></i>
+                    </label>
+                    <div class="header__logo">
+                        <a href="/" class="header__logo-link">
+                            <svg aria-hidden="true" class="header__logo-img" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none">
+                                <path fill="#fff" fill="currentColor" fill-rule="evenodd" d="M21 8.719L7.836 14.303C6.74 14.768 5.818 15 5.075 15c-.836 0-1.445-.295-1.819-.884-.485-.76-.273-1.982.559-3.272.494-.754 1.122-1.446 1.734-2.108-.144.234-1.415 2.349-.025 3.345.275.2.666.298 1.147.298.386 0 .829-.063 1.316-.19L21 8.719z" clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <input type="checkbox" hidden id="mobile-search-checkbox" class="header__search-checkbox">
+                    <div class="header__search">
+                         <input type="text" class="header__search-input" placeholder="Find your product">
+                         <!-- <div class="header__search-select">
+                             <span class="header__search-select-label">Trong shop</span>
+                             <i class="header__search-select-icon fa-solid fa-angle-down"></i>
+
+                             <ul class="header__search-option">
+                                <li class="header__search-option-item header__search-option-item--active">
+                                    <span>Trong shop</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                                <li class="header__search-option-item">
+                                    <span>Ngoài shop</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                             </ul>
+                         </div> -->
+                         <button class="header__search-btn">
+                            <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                         </button>
+                    </div>
+
+                    <div class="header__cart">
+                        <div class="header__cart-wrapped">
+                            <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                            <span class="header__cart-notice">3</span>
+                            <!-- No cart -->
+                            <div class="header__cart-list ">
+                                <img src="./assets/img/no_cart.png" alt="" class="header__cart--no-cart-img">
+                                <span class="header__cart-list--no-cart-msg">Chưa có sản phẩm</span>
+
+                                <h4 class="header__cart-heading">
+                                    Recently Added Products
+                                </h4>
+                                <ul class="header__cart-list-items">
+                                    <!-- Cart items -->
+                                    <li class="header__cart-item">
+                                         <img src="./assets/img/asia_shoes.png" alt="" class="header__cart-img">
+                                         <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Giày cầu lông ASIA bóng chuyền bóng bàn chạy bộ đế kếp nam - nữ có khâu đế</h5>
+                                                <span class="header__cart-item-price">159.800đ</span>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">
+                                                    Variation : White, 42
+                                                </span>
+                                            </div>
+                                         </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="./assets/img/af1_shoes.jpeg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                           <div class="header__cart-item-head">
+                                               <h5 class="header__cart-item-name">Giày Af1 Trắng Nam Nữ, Giày Air_Force 1 Trắng Cổ Thấp Cao Cấp Full Size Kèm Quà Tặng</h5>
+                                               <span class="header__cart-item-price">160.000đ</span>
+                                           </div>
+                                           <div class="header__cart-item-body">
+                                               <span class="header__cart-item-description">
+                                                Variation : White, 43
+                                               </span>
+                                           </div>
+                                        </div>
+                                   </li>
+                                   <li class="header__cart-item">
+                                    <img src="./assets/img/converse_shoes.jpg" alt="" class="header__cart-img">
+                                    <div class="header__cart-item-info">
+                                       <div class="header__cart-item-head">
+                                           <h5 class="header__cart-item-name">Giày Converse Chuck taylor 1970s đen trắng, giày Convers 1970s bản cao cấp Full pk</h5>
+                                           <span class="header__cart-item-price">245.000đ</span>
+                                       </div>
+                                       <div class="header__cart-item-body">
+                                           <span class="header__cart-item-description">
+                                               Variation : Black, 41
+                                           </span>
+                                       </div>
+                                    </div>
+                               </li>
+                                </ul>
+                                <a href="#" class="header__cart-view-cart btn btn--primary">View My Shopping Cart</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <ul class="header__sort-bar">
+                <li class="header__sort-item header__sort-item--active">
+                    <a href="" class="header__sort-link">Relevance</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Newest</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Best-selling</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Price</a>
+                </li>
+            </ul>
+        </header>
+
+
+        <div class="app__container">
+             <div class="grid wide">
+                <div class="row sm-gutter app__content">
+                    <!-- category -->
+                    <div class="col l-2 m-0 c-0">
+                        <nav class="category">
+                            <h3 class="category__heading">
+                                <i class="category__heading-icon fa-solid fa-list"></i>
+                                Category
+                            </h3>
+                            <ul class="category-list">
+                                <li class="category-item category-item--active">
+                                    <a href="#" class="category-item__link">Best-selling Shoes</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">New Shoes</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Old Shoes</a>
+                                </li>
+                            </ul>
+                         </nav>
+                    </div> 
+                    <!-- Product  -->
+                    <div class="col l-10 m-12 c-12">
+                        <div class="home-filter hide-on-mobile-tablet">
+                            <span class="home-filter__label">Sort By</span>
+                            <button class="home-filter__btn btn btn--primary">Relevance</button>
+                            <button class="home-filter__btn btn ">Newest</button>
+                            <button class="home-filter__btn btn">Best-selling</button>
+
+                            <div class="select-input">
+                                <span class="select-input__label">Price</span>
+                                <i class="select-input__icon fas fa-angle-down"></i>
+                                <ul class="select-input__list">
+                                    <li class="select-input__item">
+                                        <a href="" class="select-input__link">Price : Low to High</a>
+                                    </li>
+                                    <li class="select-input__item">
+                                        <a href="" class="select-input__link">Price : High to Low</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Pafination : Phân trang -->
+                            <div class="home-filter__page"> 
+                                <span class="home-filter__page-num">
+                                    <span class="home-filter__page-current">1</span>/8
+                                </span>
+                                <div class="home-filter__page-control">
+                                    <a href="" class="home-filter__page-btn home-filter__page-btn--disabled">
+                                        <i class="home-filter__page-icon fas fa-angle-left"></i>
+                                    </a>
+                                    <a href="" class="home-filter__page-btn home-filter__page-btn--enabled">
+                                        <i class="home-filter__page-icon fas fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>    
+
+                        <nav class="mobile-category">
+                            <ul class="mobile-category__list">
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Best-selling Shoes</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">New Shoes</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Old Shoes</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Sport Shoes</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Black Shoes</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">White Shoes</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Nike Shoes</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Adidas Shoes</a>
+                                </li>
+                            </ul>
+                        </nav>
+                           
+                        <div class="home-product">
+                            <div class="row sm-gutter">
+                                <!-- Product items -->
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(https://i.pinimg.com/236x/3f/1c/ee/3f1cee07386f9f10685ab7122569c2a6.jpg);"></div>
+                                        <div class="home-product-item__name">Giày Converse_Cổ Cao Nam Nữ, Giày CV 1970s Cổ Cao Trắng Đen Nam Nữ Hàng Đẹp Full Box Bill AM Sneaker</div>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-current">299.000đ</span>
+                                            <span class="home-product-item__price-old">599.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__rating-sold">
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                
+                                            </div>
+                                            <span class="home-product-item__sold">4,3k sold</span>
+                                        </div>
+                                        <div class="home-product-item__warehouse">Hà Nội</div>
+                                        <div class="home-product-item__preferred">
+                                            <span>Preferred</span>
+                                        </div>
+                                        <div class="home-product-item__sales-off">
+                                            <div class="home-product-item__sales-off-percent">-35%</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(https://shopgiayreplica.com/wp-content/uploads/2018/07/nike-air-force-1-low-replica.jpeg);"></div>
+                                        <div class="home-product-item__name">Giày Af1 Trắng Nam Nữ, Giày Air_Force 1 Trắng Cổ Thấp Cao Cấp Full Size Kèm Quà Tặng</div>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-current">160.000đ</span>
+                                            <span class="home-product-item__price-old">500.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__rating-sold">
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                
+                                            </div>
+                                            <span class="home-product-item__sold">155,4k sold</span>
+                                        </div>
+                                        <div class="home-product-item__warehouse">Hà Nội</div>
+                                        <div class="home-product-item__preferred">
+                                            <span>Preferred</span>
+                                        </div>
+                                        <div class="home-product-item__sales-off">
+                                            <div class="home-product-item__sales-off-percent">-68%</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000361048/product/samba_classic_shoes_white_772109_01_standard_d4bd308a355543588add2d680b3d82fc_master.jpg);"></div>
+                                        <div class="home-product-item__name">Giày Adidas Samba Classic White Nam Nữ, giày Samba hàng chuẩn S.Cấp Trung Full Box, Bill</div>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-current">229.000đ</span>
+                                            <span class="home-product-item__price-old">460.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__rating-sold">
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                
+                                            </div>
+                                            <span class="home-product-item__sold">2,1m sold</span>
+                                        </div>
+                                        <div class="home-product-item__warehouse">Hà Nội</div>
+                                        <div class="home-product-item__preferred">
+                                            <span>Preferred</span>
+                                        </div>
+                                        <div class="home-product-item__sales-off">
+                                            <div class="home-product-item__sales-off-percent">-50%</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(https://giaysneaker.com.vn/public/media//giay_balenciaga_speed_trainer_rep_11.jpg);"></div>
+                                        <div class="home-product-item__name">Giày Balenciaga Speed Cổ Cao Nam Nữ,Giày Balenciaga Speed Chất Liệu Vải Dành Cho Nam Và Nữ Full Box Bill</div>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-current">219.000đ</span>
+                                            <span class="home-product-item__price-old">249.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__rating-sold">
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                
+                                            </div>
+                                            <span class="home-product-item__sold">336,2k sold</span>
+                                        </div>
+                                        <div class="home-product-item__warehouse">Hà Nội</div>
+                                        <div class="home-product-item__preferred">
+                                            <span>Preferred</span>
+                                        </div>
+                                        <div class="home-product-item__sales-off">
+                                            <div class="home-product-item__sales-off-percent">-44%</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(https://vn-live-01.slatic.net/p/546ef098f24249b0c75491a929a0228d.jpg);"></div>
+                                        <div class="home-product-item__name">Giày YSL Sant Laurent Vải Canvas Màu kem, Giày Sneaker YSL Vải Đủ Size Nam Nữ, Full Box Bill</div>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-current">325.000đ</span>
+                                            <span class="home-product-item__price-old">500.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__rating-sold">
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                
+                                            </div>
+                                            <span class="home-product-item__sold">300k sold</span>
+                                        </div>
+                                        <div class="home-product-item__warehouse">Hà Nội</div>
+                                        <div class="home-product-item__preferred">
+                                            <span>Preferred</span>
+                                        </div>
+                                        <div class="home-product-item__sales-off">
+                                            <div class="home-product-item__sales-off-percent">-44%</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(https://anchuongshoes.com/image/cache/catalog/MLB/Giay-MLB-Boston-2-800x800.jpg);"></div>
+                                        <div class="home-product-item__name">Giày Converse_Cổ Cao Nam Nữ, Giày CV 1970s Cổ Cao Trắng Đen Nam Nữ Hàng Đẹp Full Box Bill AM Sneaker</div>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-current">186.000đ</span>
+                                            <span class="home-product-item__price-old">300.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__rating-sold">
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                
+                                            </div>
+                                            <span class="home-product-item__sold">81,3k sold</span>
+                                        </div>
+                                        <div class="home-product-item__warehouse">Hà Nội</div>
+                                        <div class="home-product-item__preferred">
+                                            <span>Preferred</span>
+                                        </div>
+                                        <div class="home-product-item__sales-off">
+                                            <div class="home-product-item__sales-off-percent">-38%</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(https://lzd-img-global.slatic.net/g/p/6a46e15358091cac65a7887bd4aa0c2c.jpg_720x720q80.jpg);"></div>
+                                        <div class="home-product-item__name">Giày NB Basic Kiểu Dáng Thể Thao , Giày New Balance 574 ,Giày Sneaker Nam Nữ Thời Trang Hàng Đẹp FULL BOX +bill 2023</div>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-current">128.000đ</span>
+                                            <span class="home-product-item__price-old">200.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__rating-sold">
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                
+                                            </div>
+                                            <span class="home-product-item__sold">10,1k sold</span>
+                                        </div>
+                                        <div class="home-product-item__warehouse">Hà Nam</div>
+                                        <div class="home-product-item__preferred">
+                                            <span>Preferred</span>
+                                        </div>
+                                        <div class="home-product-item__sales-off">
+                                            <div class="home-product-item__sales-off-percent">-36%</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(https://zoan.store/wp-content/uploads/2022/06/z3486056665614_301dc0f2196d35004931333c774a3fe0.jpg);"></div>
+                                        <div class="home-product-item__name">Giày Thể Thao Nam Nữ Air Force 1 Bigbang Hoạ Tiết Thổ Cẩm Đen Trắng , Sneaker AF1 Bigbang Dây Thừng Bản Classic 2023</div>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-current">178.000đ</span>
+                                            <span class="home-product-item__price-old">356.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__rating-sold">
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                
+                                            </div>
+                                            <span class="home-product-item__sold">200k sold</span>
+                                        </div>
+                                        <div class="home-product-item__warehouse">Hải Dương</div>
+                                        <div class="home-product-item__preferred">
+                                            <span>Preferred</span>
+                                        </div>
+                                        <div class="home-product-item__sales-off">
+                                            <div class="home-product-item__sales-off-percent">-35%</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(https://vn-test-11.slatic.net/p/b95b698cb49c37c40720e9ff88eee499.png);"></div>
+                                        <div class="home-product-item__name">Giày cầu lông ASIA bóng chuyền bóng bàn chạy bộ đế kếp nam-nữ có khâu đế</div>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-current">159.800đ</span>
+                                            <span class="home-product-item__price-old">170.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__rating-sold">
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                
+                                            </div>
+                                            <span class="home-product-item__sold">5,7k sold</span>
+                                        </div>
+                                        <div class="home-product-item__warehouse">Hải Phòng</div>
+                                        <div class="home-product-item__preferred">
+                                            <span>Preferred</span>
+                                        </div>
+                                        <div class="home-product-item__sales-off">
+                                            <div class="home-product-item__sales-off-percent">-7%</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(https://vn-test-11.slatic.net/p/eae8961cccb6261a82325757052be8b4.jpg);"></div>
+                                        <div class="home-product-item__name">Giày Converse Chuck taylor 1970s đen trắng, giày Convers 1970s bản cao cấp Full pk</div>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-current">245.000đ</span>
+                                            <span class="home-product-item__price-old">500.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__rating-sold">
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                <i class="home-product-item__rating-star fa-solid fa-star"></i>
+                                                
+                                            </div>
+                                            <span class="home-product-item__sold">1,1m sold</span>
+                                        </div>
+                                        <div class="home-product-item__warehouse">Bắc Giang</div>
+                                        <div class="home-product-item__preferred">
+                                            <span>Preferred</span>
+                                        </div>
+                                        <div class="home-product-item__sales-off">
+                                            <div class="home-product-item__sales-off-percent">-39%</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="pagination home-product__pagination">
+                            <li class="pagination-item pagination-item--disabled">
+                                <a href="" class="pagination-item__link">
+                                    <i class="pagination-item__icon fas fa-angle-left"></i>
+                                </a>
+                            </li>
+                            <li class="pagination-item pagination-item--active">
+                                <a href="" class="pagination-item__link">1</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">2</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">3</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">4</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">5</a>
+                            </li>
+                            <li class="pagination-item">
+                                <span>...</span>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    <i class="pagination-item__icon fas fa-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                 </div>
+             </div>
+        </div>
+
+        <footer class="footer">
+             <div class="grid wide footer__content">
+                <div class="row footer__heading-container">
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">CUSTOMER SERVICE</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                               <a href="" class="footer-item-link">Help Centre</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">Quan's Shop Mall</a>
+                             </li>
+                             <li class="footer-item">
+                                <a href="" class="footer-item-link">How To Buy</a>
+                             </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">ABOUT QUAN'S SHOP</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                               <a href="" class="footer-item-link">About Us</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">Quan's Shop Policies</a>
+                             </li>
+                             <li class="footer-item">
+                                <a href="" class="footer-item-link">Media Contact</a>
+                             </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">PAYMENT</h3>
+                        <ul class="payment-logis-container">
+                            <li class="footer__heading-payment-log">
+                                <img class="footer__payment-img" src="https://down-vn.img.susercontent.com/file/d4bbea4570b93bfd5fc652ca82a262a8" alt="logo">
+                            </li>
+                            <li class="footer__heading-payment-log">
+                                <img class="footer__payment-img" src="https://down-vn.img.susercontent.com/file/2c46b83d84111ddc32cfd3b5995d9281" alt="logo">
+                            </li>
+                        </ul>
+                       
+                        <h3 class="footer__heading">LOGISTICS</h3>
+                        <ul class="payment-logis-container">
+                            <li class="footer__heading-payment-log">
+                                <img class="footer__payment-img" src="https://down-vn.img.susercontent.com/file/vn-50009109-64f0b242486a67a3d29fd4bcf024a8c6" alt="logo">
+                            </li>
+                            <li class="footer__heading-payment-log">
+                                <img class="footer__payment-img" src="https://down-vn.img.susercontent.com/file/59270fb2f3fbb7cbc92fca3877edde3f" alt="logo">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__heading">FOLLOW US</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                               <a href="https://www.facebook.com/minh.quaan.12/?locale=vi_VN" class="footer-item-link">
+                                <i class="footer-item__icon fa-brands fa-facebook"></i>
+                                Facebook
+                            </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="https://www.instagram.com/dq_1243/" class="footer-item-link">
+                                    <i class="footer-item__icon fa-brands fa-square-instagram"></i>
+                                    Instagram
+                                </a>
+                             </li>
+                             <li class="footer-item">
+                                <a href="https://github.com/MinhQuan124" class="footer-item-link">
+                                    <i class="footer-item__icon fa-brands fa-github"></i>
+                                    Github
+                                </a>
+                             </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <div class="footer__download">
+                            <h3 class="footer__heading">QUAN'S SHOP APP DOWNLOAD</h3>
+                        <img class="footer__heading-download-logo" src="./assets/img/qr_code_github.png" alt="">
+                        </div>
+                    </div>
+                </div>
+             </div>
+             <div class="footer__bottom">
+                <div class="grid wide">
+                    <div class="footer__text">
+                        <div class="footer-text footer-text-main">Quan's Shop</div>
+                        <div class="footer-text">Linh Nam, Hoang Mai, Ha Noi</div>
+                        <div class="footer-text">Person in charge of information management: Dinh Minh Quan</div>
+                        <div class="footer-text"> Business Registration Certificate No: 0987654321</div>
+                        <div class="footer-text"> © 2023 - Copyright belongs to Quan's Shop</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+     </div>
+    <!-- Modal layout -->
+     <!-- <div class="modal">
+        <div class="modal__overlay">
+
+        </div>
+        <div class="modal__body"> 
+            
+                <!--Register form -->
+                <!-- <div class="auth-form">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Sign up</h3>
+                            <span class="auth-form__switch-btn">Login</span>
+                        </div>
+                            <div class="auth-form__form">
+                                <div class="auth-form__group">
+                                    <input type="text" class="auth-form__input" placeholder="Enter your email">
+                                </div>
+                                <div class="auth-form__group">
+                                    <input type="password" class="auth-form__input" placeholder="Enter your password">
+                                </div>
+                                <div class="auth-form__group">
+                                    <input type="password" class="auth-form__input" placeholder="Confirm your password">
+                                </div>
+                            </div>
+                            <div class="auth-form__aside">
+                                <p class="auth-form__policy-text">
+                                    By signing up, you agree to Quan's Shop about
+                                    <a href="" class="auth-form__text-link">Terms of Service</a> &
+                                    <a href="" class="auth-form__text-link">Privacy Policy</a>
+                                </p>
+                            </div>
+                            <div class="auth-form__controls">
+                                <button class="btn btn--normal auth-form__controls-back">BACK</button>
+                                <button class="btn btn--primary">SIGN UP</button>
+    
+                            </div>
+                    
+                        
+                    </div>
+                    <div class="auth-form__socials">
+                        <a href="" class="auth-form__socials--fb btn btn--size-s btn--with-icon">
+                            <i class="auth-form__socials-icon fa-brands fa-square-facebook"></i>
+                            <span class="auth-form__socials-title">Connect to Facebook</span>
+                        </a>
+                            <a href="" class="auth-form__socials--gg btn btn--size-s btn--with-icon">
+                                <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                                <span class="auth-form__socials-title">Connect to Google</span>
+                            </a>
+                    </div>
+                </div> -->
+
+                <!-- Login form -->
+                 <!-- <div class="auth-form">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Login</h3>
+                            <span class="auth-form__switch-btn">Sign up</span>
+                        </div>
+                            <div class="auth-form__form">
+                                <div class="auth-form__group">
+                                    <input type="text" class="auth-form__input" placeholder="Enter your email">
+                                </div>
+                                <div class="auth-form__group">
+                                    <input type="password" class="auth-form__input" placeholder="Enter your password">
+                                </div>
+                            </div>
+                            <div class="auth-form__aside">
+                                <div class="auth-form__help">
+                                    <a href="" class="auth-form__help-link auth-form__help-forgot">Fogot password</a>
+                                    <span class="auth-form__help-separate"></span>
+                                    <a href="" class="auth-form__help-link">Need help?</a>
+                                </div>
+                            </div>
+                            <div class="auth-form__controls">
+                                <button class="btn btn--normal auth-form__controls-back">BACK</button>
+                                <button class="btn btn--primary">LOGIN</button>
+    
+                            </div>
+                    
+                        
+                    </div>
+                    <div class="auth-form__socials">
+                        <a href="" class="auth-form__socials--fb btn btn--size-s btn--with-icon">
+                            <i class="auth-form__socials-icon fa-brands fa-square-facebook"></i>
+                            <span class="auth-form__socials-title">Connect to Facebook</span>
+                        </a>
+                            <a href="" class="auth-form__socials--gg btn btn--size-s btn--with-icon">
+                                <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                                <span class="auth-form__socials-title">Connect to Google</span>
+                            </a>
+                    </div>
+                </div> -->
+        </div>
+      
+    </div>  
+</body>
+</html>
